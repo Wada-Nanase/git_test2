@@ -16,6 +16,6 @@ jobs: #jobの定義(実行タスク)
           java-version: '21'
           distribution: 'temurin'
       - name: Build
-        run: javac Test.java
+        run: javac test.java
       - name: Test
-        run: java Test
+        run: java test
