@@ -15,5 +15,7 @@ jobs: #jobの定義(実行タスク)
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Build with Maven
-        run: mvn verify
+      - name: Build
+        run: javac Test.java
+      - name: Test
+        run: java Test
