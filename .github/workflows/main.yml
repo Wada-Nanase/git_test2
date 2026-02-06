@@ -2,7 +2,7 @@ name: CI-test #ワークフロー名
 on: push #ワークフローの動作するトリガー
 jobs: #jobの定義(実行タスク)
   build:
-    runs-on:
+    runs-on: ubuntu-latest
     steps: #jobの中で実行されるコマンド
       - name: Push branch #コマンドごとの名前
         run: echo "ブランチをpushしました"
