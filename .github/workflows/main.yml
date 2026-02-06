@@ -3,6 +3,7 @@ on: push #ワークフローの動作するトリガー
 jobs: #jobの定義(実行タスク)
   build:
     runs-on: ubuntu-latest
+
     steps: #jobの中で実行されるコマンド
       - name: Push branch #コマンドごとの名前
         run: echo "ブランチをpushしました"
@@ -14,6 +15,5 @@ jobs: #jobの定義(実行タスク)
         with:
           java-version: '21'
           distribution: 'temurin'
-          cache: maven #キャッシュ
       - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots verify
+        run: mvn verify
