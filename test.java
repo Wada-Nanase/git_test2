@@ -8,6 +8,8 @@ public class test{
         String sentence = scanner.nextLine();
         System.out.println(sentence);
 
+        文法ミス
+
         scanner.close();
     }
 }
