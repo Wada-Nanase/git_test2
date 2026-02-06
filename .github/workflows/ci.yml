@@ -13,3 +13,4 @@ jobs: #jobの定義(実行タスク)
       - name: Setup
         uses: actions/setup-java@v4
         with: { java-version: '21', distribution: 'temurin' }
+      - run: ./mvnw -q -DskipTests=false test
