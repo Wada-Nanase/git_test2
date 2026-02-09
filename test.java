@@ -5,5 +5,6 @@ public class test{
         System.out.println("VScode テスト");
         System.out.println("入力してください");
 
+        文法ミス
     }
 }
